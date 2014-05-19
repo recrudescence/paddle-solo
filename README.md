@@ -1,5 +1,5 @@
 First foray into games!
-Paddlepaddle will eventually be a Pong clone.
+Paddle-solo will eventually be a Pong clone, PaddlePaddle.
 
 Current features:
 
@@ -8,12 +8,12 @@ Current features:
 	* MOVEMENT!
 	* COLLISION !!!! wao0o
 	* Colorful colors :) :)
-	* Sound effects (via my mouth)
+	* Sound effects (via various mouths)
 
 
 Planned features:
 
 	* Graphics
 	* A background
-	* Game modes (2 player co-op, very adventure)
+	* Game modes (2 player co-op, very adventure) <- this will be a separate game
 	* A high score system (probably local first)
