@@ -19,16 +19,13 @@ public class MainGame extends JPanel {
 	
 	public MainGame() {
 		addKeyListener(new KeyListener() {
-			@Override
 			public void keyTyped(KeyEvent e) {
 			}
 
-			@Override
 			public void keyReleased(KeyEvent e) {
 				paddle.keyReleased(e);
 			}
 
-			@Override
 			public void keyPressed(KeyEvent e) {
 				paddle.keyPressed(e);
 			}
@@ -43,6 +40,8 @@ public class MainGame extends JPanel {
 		frame.add(game);
 		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		Sound.BG1.loop();
+		//Sound.BG2.loop();
 		
 		while (true) {
 			game.move();
@@ -77,7 +76,8 @@ public class MainGame extends JPanel {
 		} catch(InterruptedException ex) {
 		    Thread.currentThread().interrupt();
 		}
-		Sound.DEATH.play();
+		Sound.DEATH1.play();
+		Sound.DEATH2.play();
 		JOptionPane.showMessageDialog(this, "Game Over!\r\nScore: " + getScore(), "Game Over!", JOptionPane.OK_OPTION);
 		System.exit(ABORT);
 	}
