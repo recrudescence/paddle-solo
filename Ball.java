@@ -106,4 +106,6 @@ public class Ball {
 	public boolean collision() {
 		return game.paddle.getBounds().intersects(getBounds());
 	}
+
+	// hi calvin
 }
